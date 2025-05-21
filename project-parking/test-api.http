@@ -1,0 +1,22 @@
+### Request POST kendaraan masuk
+POST http://localhost:3000/api/parkir/masuk
+Content-Type: application/json
+
+{
+  "plat_nomor": "B5678XYZ",
+  "jenis_kendaraan": "motor"
+}
+
+### Request POST kendaraan keluar
+POST http://localhost:3000/api/parkir/keluar
+Content-Type: application/json
+
+{
+  "plat_nomor": "B5678XYZ"
+}
+
+### Request GET daftar aktif kendaraan parkir
+GET http://localhost:3000/api/parkir/aktif
+
+### Request GET riwayat kendaraan keluar
+GET http://localhost:3000/api/parkir/riwayat

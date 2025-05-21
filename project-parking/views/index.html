@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Parkir Mall</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Sistem Parkir Mall</h1>
+
+  <section>
+    <h2>Masuk Kendaraan</h2>
+    <form id="form-masuk">
+      <input type="text" id="plat_nomor" placeholder="Plat Nomor" required>
+      <select id="jenis_kendaraan">
+        <option value="motor">Motor</option>
+        <option value="mobil">Mobil</option>
+      </select>
+      <button type="submit">Catat Masuk</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Daftar Kendaraan Aktif</h2>
+    <table id="tabel-aktif">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Plat Nomor</th>
+          <th>Jenis</th>
+          <th>Waktu Masuk</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Riwayat Parkir</h2>
+    <table id="tabel-riwayat">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Plat</th>
+          <th>Jenis</th>
+          <th>Masuk</th>
+          <th>Keluar</th>
+          <th>Tarif</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="/script.js"></script>
+</body>
+</html>
